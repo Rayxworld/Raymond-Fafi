@@ -1,31 +1,41 @@
 const skillGroups = [
   {
     title: "Programming & Scripting",
-    items: ["Python", "Bash", "PowerShell", "Linux"],
+    items: ["Python", "SQL", "Bash", "PowerShell", "Linux", "Git/GitHub"],
   },
   {
     title: "Detection & SOC",
     items: [
+      "SIEM Concepts",
       "Log Analysis",
+      "Alert Triage",
       "Brute Force Detection",
       "Credential Stuffing",
-      "Incident Response Simulation",
+      "Incident Response",
       "Risk Scoring",
+      "MITRE ATT&CK",
     ],
   },
   {
     title: "Network & Threat Intel",
     items: [
+      "Wireshark",
       "PCAP Analysis",
       "Scapy",
+      "Vulnerability Scanning",
+      "Attack Surface Mapping",
       "IOC Analysis",
       "Threat Intelligence",
-      "MITRE ATT&CK",
+      "DNS Security",
     ],
   },
   {
-    title: "Pipelines & Dashboards",
-    items: ["Kafka", "Syslog", "JSON Export", "Pandas", "Altair", "Streamlit", "Pytest"],
+    title: "Data & Dashboards",
+    items: ["Kafka", "Syslog", "JSON/CSV ETL", "Pandas", "NumPy", "scikit-learn", "Streamlit", "Pytest"],
+  },
+  {
+    title: "Cloud & Platforms",
+    items: ["AWS DevOps", "Cloud Audit", "Windows Security", "CyberChef", "Hashcat", "Maltego", "Shodan"],
   },
 ];
 

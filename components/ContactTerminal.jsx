@@ -63,7 +63,7 @@ export default function ContactTerminal() {
         </div>
 
         <div className="command-output">
-          <p>Available for security engineering and SOC analyst roles.</p>
+          <p>Open to remote, hybrid, or relocation for SOC Analyst, Junior Detection Engineer, and security engineering roles.</p>
         </div>
       </div>
     </motion.div>

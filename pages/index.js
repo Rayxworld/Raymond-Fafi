@@ -9,6 +9,18 @@ import ContactTerminal from "../components/ContactTerminal";
 
 const projects = [
   {
+    name: "Beacon Exposure Study",
+    description:
+      "Open-source passive measurement framework studying internet exposure across 75 organizations in 15 African countries.",
+    features: [
+      "Measured SPF/DMARC, subdomain exposure, and public IP attack surface using passive public data",
+      "Found a statistically significant government-sector DMARC enforcement gap (chi-squared = 9.06, p = 0.0026)",
+      "Published anonymized data, analysis scripts, and a reproducible Python framework on GitHub",
+    ],
+    stack: "Python | DNS | Certificate Transparency | Shodan InternetDB | Statistics",
+    link: "https://github.com/Rayxworld",
+  },
+  {
     name: "Brute Force Detection System",
     description:
       "Log-based detection engine for brute force and credential stuffing attacks with SOC-style alerting.",
@@ -45,15 +57,15 @@ const projects = [
     link: "https://github.com/Rayxworld/Threat-Intelligence-Engine",
   },
   {
-    name: "SOC Simulation Toolkit",
+    name: "Security Risk Tooling",
     description:
-      "A practical portfolio of dashboards, detections, and incident simulation workflows built for SOC practice.",
+      "A collection of focused security and analytics tools built around risk scoring, anomaly detection, and log parsing.",
     features: [
-      "Alert enrichment and analyst-facing dashboards",
-      "Incident workflow simulation from ingestion to triage",
-      "Reusable Python-based security engineering patterns",
+      "NGX-Stock-Oracle applies time-series anomaly detection and statistical outlier techniques",
+      "LendShield turns behavioral signals into an automated risk-scoring pipeline",
+      "RegexPlain supports repeatable log parsing and IOC extraction workflows",
     ],
-    stack: "Python | Streamlit | Pandas | Security Analytics",
+    stack: "Python | Statistics | Pandas | Regex | Risk Analytics",
     link: "https://github.com/Rayxworld",
   },
 ];
@@ -126,8 +138,8 @@ export default function Home() {
           <h2>Projects</h2>
         </div>
         <p className="section-description">
-          Interactive project nodes highlight hands-on security engineering work
-          across detection, traffic analysis, and threat intelligence.
+          Selected work spanning passive research, detection engineering, and
+          analyst-ready security tooling.
         </p>
         <ProjectNodeMap projects={projects} />
       </section>

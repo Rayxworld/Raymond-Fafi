@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 
 const summaryLines = [
-  "SOC Analyst",
-  "Detection Engineer",
-  "Threat Intelligence & Python Security Engineer",
+  "SOC Analyst / Detection Engineer",
+  "Threat Detection & Security Research",
+  "Python Security Tooling",
 ];
 
 const quickStats = [
-  ["focus", "Detection engineering, SOC workflows, threat triage"],
-  ["location", "Port Harcourt, Rivers, Nigeria"],
-  ["core_tools", "Python, Scapy, Streamlit, Kafka, Syslog, MITRE ATT&CK"],
+  ["focus", "Log analysis, threat detection, alert triage"],
+  ["base", "Port Harcourt, Nigeria / open to remote"],
+  ["toolbox", "Python, Wireshark, Scapy, Streamlit, AWS, MITRE ATT&CK"],
 ];
 
 export default function HeroTerminal({ onScroll }) {
@@ -55,9 +55,9 @@ export default function HeroTerminal({ onScroll }) {
         </div>
         <div className="command-output">
           <p>
-            Entry-level cybersecurity professional building practical detection
-            systems, network anomaly analyzers, and threat intelligence
-            workflows.
+            Security analyst with hands-on detection engineering experience,
+            published security research, and a talent for making technical
+            findings useful to both analysts and non-technical teams.
           </p>
         </div>
 
@@ -78,8 +78,8 @@ export default function HeroTerminal({ onScroll }) {
         </div>
 
         <div className="terminal-actions">
-          <button className="button" onClick={() => onScroll("#projects")}>
-            View Projects
+          <button className="button button-primary" onClick={() => onScroll("#projects")}>
+            Explore the work
           </button>
           <button className="button secondary" onClick={() => onScroll("#contact")}>
             Contact
