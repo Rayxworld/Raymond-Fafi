@@ -5,6 +5,7 @@ import HeroTerminal from "../components/HeroTerminal";
 import AboutTerminal from "../components/AboutTerminal";
 import SkillNodeMap from "../components/SkillNodeMap";
 import ProjectNodeMap from "../components/ProjectNodeMap";
+import CertificationsTerminal from "../components/CertificationsTerminal";
 import ContactTerminal from "../components/ContactTerminal";
 
 const projects = [
@@ -75,6 +76,7 @@ const navLinks = [
   { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
   { label: "Projects", href: "#projects" },
+  { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -144,9 +146,21 @@ export default function Home() {
         <ProjectNodeMap projects={projects} />
       </section>
 
-      <section id="contact" className="section contact terminal-window">
+      <section id="certifications" className="section certifications terminal-window">
         <div className="section-heading">
           <span>04</span>
+          <h2>Certifications</h2>
+        </div>
+        <p className="section-description">
+          Coursework and job simulations building depth across cybersecurity,
+          cloud, data, and software engineering.
+        </p>
+        <CertificationsTerminal />
+      </section>
+
+      <section id="contact" className="section contact terminal-window">
+        <div className="section-heading">
+          <span>05</span>
           <h2>Contact Me</h2>
         </div>
         <ContactTerminal />
